@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int A[6];
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+
+    A[0]=a+b*c;
+    A[1]=a*(b+c);
+    A[2]=a*b*c;
+    A[3]=(a+b)*c;
+    A[4]=a*b+c;
+    A[5]=a+b+c;
+    sort(A,A+6);
+
+    cout<<A[5];
+
+
+}
